@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AuroraAi · Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page page--dashboard">
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="sidebar__brand">
+        <span class="brand-icon">✦</span>
+        <span>AuroraAi</span>
+      </div>
+      <nav class="sidebar__nav">
+        <a class="sidebar__link sidebar__link--active" href="#">Dashboard</a>
+        <a class="sidebar__link" href="#">Construtor de fluxos</a>
+        <a class="sidebar__link" href="#">Campanhas</a>
+        <a class="sidebar__link" href="#">Integrações</a>
+        <a class="sidebar__link" href="#">Equipe</a>
+        <a class="sidebar__link" href="#">Configurações</a>
+      </nav>
+      <div class="sidebar__footer">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          Evolution API conectada
+        </div>
+      </div>
+    </aside>
+
+    <div class="content">
+      <header class="topbar">
+        <div>
+          <h1>Olá, time Aurora 👋</h1>
+          <p>Acompanhe o desempenho dos seus chatbots para WhatsApp.</p>
+        </div>
+        <div class="topbar__actions">
+          <button class="button button--ghost">Ver relatórios</button>
+          <button class="button button--primary">Novo fluxo</button>
+        </div>
+      </header>
+
+      <section class="metrics">
+        <article class="card">
+          <p>Conversas ativas</p>
+          <h2>1.284</h2>
+          <span class="trend trend--up">+12% esta semana</span>
+        </article>
+        <article class="card">
+          <p>Taxa de resolução</p>
+          <h2>86%</h2>
+          <span class="trend trend--up">+4% vs. semana anterior</span>
+        </article>
+        <article class="card">
+          <p>Fluxos publicados</p>
+          <h2>24</h2>
+          <span class="trend">3 em revisão</span>
+        </article>
+        <article class="card">
+          <p>Tempo médio</p>
+          <h2>2m40s</h2>
+          <span class="trend trend--down">-18s mais rápido</span>
+        </article>
+      </section>
+
+      <section class="grid">
+        <article class="card card--wide">
+          <div class="card__header">
+            <h3>Fluxos recentes</h3>
+            <button class="link-button">Ver todos</button>
+          </div>
+          <ul class="list">
+            <li>
+              <div>
+                <strong>Boas-vindas e qualificação</strong>
+                <span>Atualizado há 2 horas</span>
+              </div>
+              <span class="badge">Publicado</span>
+            </li>
+            <li>
+              <div>
+                <strong>Cobrança inteligente</strong>
+                <span>Atualizado ontem</span>
+              </div>
+              <span class="badge badge--warning">Em revisão</span>
+            </li>
+            <li>
+              <div>
+                <strong>Suporte pós-venda</strong>
+                <span>Atualizado há 3 dias</span>
+              </div>
+              <span class="badge badge--success">Ativo</span>
+            </li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card__header">
+            <h3>Checklist de lançamento</h3>
+            <button class="link-button">Editar</button>
+          </div>
+          <ul class="list list--compact">
+            <li><span>✅</span><span>Conectar número WhatsApp</span></li>
+            <li><span>✅</span><span>Configurar mensagens de fallback</span></li>
+            <li><span>⚠️</span><span>Importar base de contatos</span></li>
+            <li><span>⚪</span><span>Publicar fluxo principal</span></li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card__header">
+            <h3>Integração Evolution API</h3>
+          </div>
+          <p class="card__text">
+            Status saudável. Última sincronização há 5 minutos.
+          </p>
+          <button class="button button--ghost">Abrir monitor</button>
+        </article>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
