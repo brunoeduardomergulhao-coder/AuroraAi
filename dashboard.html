@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AuroraAi · Dashboard do Usuário</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page page--dashboard">
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="sidebar__brand">
+        <span class="brand-icon">✦</span>
+        <span>AuroraAi</span>
+      </div>
+      <nav class="sidebar__nav">
+        <a class="sidebar__link sidebar__link--active" href="dashboard.html">Meu painel</a>
+        <a class="sidebar__link" href="designer.html">Construtor de fluxos</a>
+        <a class="sidebar__link" href="#">Conversas</a>
+        <a class="sidebar__link" href="#">Leads</a>
+        <a class="sidebar__link" href="#">Integrações</a>
+        <a class="sidebar__link" href="#">Meu perfil</a>
+      </nav>
+      <div class="sidebar__footer">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          Evolution API conectada
+        </div>
+      </div>
+    </aside>
+
+    <div class="content">
+      <header class="topbar">
+        <div>
+          <h1>Olá, Larissa 👋</h1>
+          <p>Confira suas conversas e fluxos ativos no WhatsApp.</p>
+        </div>
+        <div class="topbar__actions">
+          <button class="button button--ghost">Exportar dados</button>
+          <a class="button button--primary" href="designer.html">Criar fluxo</a>
+        </div>
+      </header>
+
+      <section class="metrics">
+        <article class="card">
+          <p>Conversas hoje</p>
+          <h2>186</h2>
+          <span class="trend trend--up">+18% desde ontem</span>
+        </article>
+        <article class="card">
+          <p>Taxa de resposta</p>
+          <h2>92%</h2>
+          <span class="trend trend--up">+3% na semana</span>
+        </article>
+        <article class="card">
+          <p>Leads em andamento</p>
+          <h2>38</h2>
+          <span class="trend">12 aguardando retorno</span>
+        </article>
+        <article class="card">
+          <p>Mensagens enviadas</p>
+          <h2>3.142</h2>
+          <span class="trend trend--up">+9% neste mês</span>
+        </article>
+      </section>
+
+      <section class="grid">
+        <article class="card card--wide">
+          <div class="card__header">
+            <h3>Minhas conversas recentes</h3>
+            <button class="link-button">Ver tudo</button>
+          </div>
+          <ul class="list">
+            <li>
+              <div>
+                <strong>Carla · Suporte</strong>
+                <span>Atualizado há 12 min</span>
+              </div>
+              <span class="badge">Em andamento</span>
+            </li>
+            <li>
+              <div>
+                <strong>Felipe · Vendas</strong>
+                <span>Atualizado há 1 hora</span>
+              </div>
+              <span class="badge badge--warning">Aguardando</span>
+            </li>
+            <li>
+              <div>
+                <strong>Grupo VIP · Upsell</strong>
+                <span>Atualizado ontem</span>
+              </div>
+              <span class="badge badge--success">Resolvido</span>
+            </li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card__header">
+            <h3>Atalhos rápidos</h3>
+            <button class="link-button">Personalizar</button>
+          </div>
+          <div class="quick-actions">
+            <button class="quick-actions__item">
+              <span>📎</span>
+              <span>Importar contatos</span>
+            </button>
+            <button class="quick-actions__item">
+              <span>🧩</span>
+              <span>Conectar CRM</span>
+            </button>
+            <button class="quick-actions__item">
+              <span>🤖</span>
+              <span>Configurar IA</span>
+            </button>
+            <button class="quick-actions__item">
+              <span>🛡️</span>
+              <span>Revisar segurança</span>
+            </button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__header">
+            <h3>Integração Evolution API</h3>
+          </div>
+          <p class="card__text">
+            Status saudável. Última sincronização há 3 minutos.
+          </p>
+          <button class="button button--ghost">Abrir monitor</button>
+        </article>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

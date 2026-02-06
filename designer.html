@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AuroraAi · Designer de Fluxos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page page--designer">
+  <div class="dashboard">
+    <aside class="sidebar">
+      <div class="sidebar__brand">
+        <span class="brand-icon">✦</span>
+        <span>AuroraAi</span>
+      </div>
+      <nav class="sidebar__nav">
+        <a class="sidebar__link" href="dashboard.html">Dashboard</a>
+        <a class="sidebar__link sidebar__link--active" href="designer.html">Construtor de fluxos</a>
+        <a class="sidebar__link" href="#">Campanhas</a>
+        <a class="sidebar__link" href="#">Integrações</a>
+        <a class="sidebar__link" href="#">Equipe</a>
+        <a class="sidebar__link" href="#">Configurações</a>
+      </nav>
+      <div class="sidebar__footer">
+        <div class="status-pill">
+          <span class="status-dot"></span>
+          Evolution API conectada
+        </div>
+      </div>
+    </aside>
+
+    <div class="content">
+      <header class="topbar topbar--builder">
+        <div>
+          <h1>Designer de fluxos</h1>
+          <p>Arraste, conecte e publique experiências completas para WhatsApp.</p>
+        </div>
+        <div class="topbar__actions">
+          <button class="button button--ghost">Salvar rascunho</button>
+          <button class="button button--primary">Publicar fluxo</button>
+        </div>
+      </header>
+
+      <section class="builder">
+        <aside class="builder__panel">
+          <div class="panel panel--compact">
+            <h3>Blocos rápidos</h3>
+            <div class="builder__blocks">
+              <button class="builder__block" type="button">
+                <span class="builder__icon">💬</span>
+                <span>Mensagem</span>
+              </button>
+              <button class="builder__block" type="button">
+                <span class="builder__icon">❓</span>
+                <span>Pergunta</span>
+              </button>
+              <button class="builder__block" type="button">
+                <span class="builder__icon">⏱️</span>
+                <span>Delay</span>
+              </button>
+              <button class="builder__block" type="button">
+                <span class="builder__icon">🔀</span>
+                <span>Condição</span>
+              </button>
+              <button class="builder__block" type="button">
+                <span class="builder__icon">🧠</span>
+                <span>IA</span>
+              </button>
+              <button class="builder__block" type="button">
+                <span class="builder__icon">🔗</span>
+                <span>Webhook</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="panel panel--compact">
+            <h3>Detalhes do fluxo</h3>
+            <div class="builder__details">
+              <div>
+                <span class="label">Nome</span>
+                <strong>Onboarding de leads</strong>
+              </div>
+              <div>
+                <span class="label">Canal</span>
+                <strong>WhatsApp · Evolution</strong>
+              </div>
+              <div>
+                <span class="label">Última alteração</span>
+                <strong>Hoje às 14:32</strong>
+              </div>
+            </div>
+            <button class="button button--ghost button--full">Configurar disparo</button>
+          </div>
+        </aside>
+
+        <div class="builder__canvas">
+          <div class="canvas">
+            <div class="canvas__grid"></div>
+            <div class="flow">
+              <article class="node node--start">
+                <span class="node__badge">Início</span>
+                <h4>Boas-vindas</h4>
+                <p>Olá! Sou a Aurora, sua assistente virtual.</p>
+              </article>
+
+              <article class="node">
+                <span class="node__badge node__badge--question">Pergunta</span>
+                <h4>Qual seu objetivo?</h4>
+                <p>Captação, suporte ou vendas?</p>
+              </article>
+
+              <article class="node">
+                <span class="node__badge node__badge--branch">Roteamento</span>
+                <h4>Direcionar para time</h4>
+                <p>Encaminhar para time comercial.</p>
+              </article>
+
+              <article class="node node--highlight">
+                <span class="node__badge node__badge--ai">IA</span>
+                <h4>Resumo do lead</h4>
+                <p>Gerar resumo automático para o CRM.</p>
+              </article>
+            </div>
+          </div>
+          <div class="canvas__toolbar">
+            <button class="button button--ghost">Zoom -</button>
+            <button class="button button--ghost">Centralizar</button>
+            <button class="button button--ghost">Zoom +</button>
+          </div>
+        </div>
+
+        <aside class="builder__panel builder__panel--right">
+          <div class="panel panel--compact">
+            <h3>Propriedades</h3>
+            <div class="builder__properties">
+              <div>
+                <span class="label">Bloco selecionado</span>
+                <strong>Pergunta</strong>
+              </div>
+              <div class="builder__chips">
+                <span class="chip chip--active">Texto</span>
+                <span class="chip">Mídia</span>
+                <span class="chip">Ação</span>
+              </div>
+              <p class="helper">
+                Ajuste o conteúdo e o comportamento do bloco selecionado para
+                personalizar a experiência do usuário final.
+              </p>
+              <button class="button button--primary button--full">
+                Atualizar bloco
+              </button>
+            </div>
+          </div>
+
+          <div class="panel panel--compact">
+            <h3>Insights do fluxo</h3>
+            <ul class="list list--compact">
+              <li><span>📊</span><span>Conversão estimada: 32%</span></li>
+              <li><span>⚡</span><span>Resposta média: 8s</span></li>
+              <li><span>🧩</span><span>3 integrações conectadas</span></li>
+            </ul>
+          </div>
+        </aside>
+      </section>
+    </div>
+  </div>
+</body>
+</html>

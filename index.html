@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AuroraAi · Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="page page--login">
+  <main class="login">
+    <section class="login__hero">
+      <div class="login__brand">
+        <span class="brand-icon">✦</span>
+        <span class="brand-text">AuroraAi</span>
+      </div>
+      <h1>Crie fluxos inteligentes para WhatsApp em minutos.</h1>
+      <p>
+        Construa, teste e publique jornadas conversacionais com integração direta
+        à Evolution API da sua VPS.
+      </p>
+      <div class="login__stats">
+        <div>
+          <strong>+120</strong>
+          <span>fluxos ativos</span>
+        </div>
+        <div>
+          <strong>99,9%</strong>
+          <span>disponibilidade</span>
+        </div>
+        <div>
+          <strong>5 min</strong>
+          <span>para publicar</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="login__panel">
+      <div class="panel">
+        <h2>Bem-vindo de volta</h2>
+        <p>Entre para continuar configurando seus bots e fluxos.</p>
+        <form class="form" action="dashboard.html">
+          <label class="form__field">
+            <span>E-mail (Gmail)</span>
+            <input
+              type="email"
+              placeholder="seuemail@gmail.com"
+              pattern=".+@gmail\\.com"
+              title="Use um endereço @gmail.com"
+              autocomplete="email"
+              required
+            />
+          </label>
+          <label class="form__field">
+            <span>Senha</span>
+            <input type="password" placeholder="••••••••" required />
+          </label>
+          <div class="form__row">
+            <label class="checkbox">
+              <input type="checkbox" />
+              <span>Lembrar acesso</span>
+            </label>
+            <a href="#">Esqueci minha senha</a>
+          </div>
+          <button class="button button--primary" type="submit">
+            Entrar na plataforma
+          </button>
+        </form>
+        <p class="form__hint">
+          Acesso disponível apenas para contas Gmail cadastradas.
+        </p>
+        <div class="panel__footer">
+          <span>Não tem conta?</span>
+          <a href="#">Solicitar acesso</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
